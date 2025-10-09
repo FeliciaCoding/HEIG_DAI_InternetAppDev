@@ -78,12 +78,24 @@ and answering your questions. Thanks!
 -->
 
 - Arnaud Bersier [@Aber37](https://github.com/Aber37)
+- Samuel Dos Santos [@Samurai-05](https://github.com/Samurai-05)
+- Tiago Filipe Ferreira Costa [@tfHEIG](https://github.com/tfHEIG)
+- Louis Garcia [@loueyyyy](https://github.com/loueyyyy)
+- Pierre Gellet [@IbuprofenLover](https://github.com/IbuprofenLover)
+- Julien Gorgerat [@GilleanTobin](https://github.com/GilleanTobin)
 - Marc Ischi [@Ischim](https://github.com/Ischim)
 - Yuuta Jorand [@hydrogene09](https://github.com/hydrogene09)
+- Fabien Léger [@Schokiiiiiiii](https://github.com/Schokiiiiiiii)
+- Arnaut Leyre [@Arnaut](https://github.com/Arnaut)
 - Agron Markaj [@markaj-agron](https://github.com/markaj-agron)
-- Gellet Pierre [@IbuprofenLover](https://github.com/IbuprofenLover)
-- Maxime Regenass [@maxregenassPro](https://github.com/maxregenassPro)                                                      
+- Audrey Mauroux [@aelm2412](https://github.com/aelm2412)
+- Thibault Matthey [@ThibaultMHEIG](https://github.com/ThibaultMheig)
+- Laszlo Meylan [@LaszloMeylan](https://github.com/LaszloMeylan)
+- Jonathan Nicolet [@NicoletJonathan](https://github.com/NicoletJonathan)
+- Mirco Profico [@mircoprofico](https://github.com/mircoprofico)
+- Maxime Regenass [@maxregenassPro](https://github.com/maxregenassPro)
 - Santiago Sugrañes [@santettebtw](https://github.com/santettebtw)
+
 
 </details>
 
@@ -112,8 +124,30 @@ It helps us (the teaching staff) searching for someone when grading your work
 and answering your questions. Thanks!
 -->
 
+- Gianni Bee [@GinByte](https://github.com/GinByte)
+- Louis Bindschedler [@Parityyy](https://github.com/Parityyy)
+- Kym Bolomey [@k-bool](https://github.com/k-bool)
+- Thomas Boltshauser
+  [@Thomas-boltshauser](https://github.com/Thomas-boltshauser)
+- Quentin Eschmann [@QuentinEschmann](https://github.com/QuentinEschmann)
+- Benoit Essinger [@EssingerBenoit](https://github.com/EssingerBenoit)
+- Sofia Henriques Garfo [@aihxpos111](https://github.com/aihxpos111)
 - Tadeusz Kondracki [@GlysVenture](https://github.com/GlysVenture)
-- Pei-Wen Liao[@FeliciaCoding](https://github.com/FeliciaCoding)
+- Pei-Wen Liao [@FeliciaCoding](https://github.com/FeliciaCoding)
+- Maksym Makovskyi [@maxmakovskiy](https://github.com/maxmakovskiy)
+- Quentin Michon [@QuentinMichon](https://github.com/QuentinMichon)
+- Fateme Pirhayati [@Luffy-sudo-fateme](https://github.com/Luffy-sudo-fateme)
+- Luis Oswaldo [@foswaldo](https://github.com/foswaldo)
+- Christopher Pardo [@ChristopherPardo](https://github.com/ChristopherPardo)
+- Charles Perfect [@CharlesPerfect](https://github.com/CharlesPerfect)
+- Paul Reynard [@reynardpaul](https://github.com/reynardpaul)
+- Simão Romano Schindler [@SchindlerSimao](https://github.com/SchindlerSimao)
+- Jules Rossier [@julesrossier](https://github.com/julesrossier)
+- Aymeric Siegenthaler [@aymcorp](https://github.com/aymcorp)
+- Yanni Skawronski [@yanniSkawronski](https://github.com/yanniSkawronski)
+- Colin Stefani [@colinstfni](https://github.com/colinstfni)
+- Robiel Tesfazghi [@robielTes](https://github.com/robielTes)
+- Guo Yu Wu [@AlterSpectre](https://github.com/AlterSpectre)
 
 </details>
 
@@ -169,8 +203,8 @@ Dates are taken from the
 |    [01](#-course-01) | 15.09. - 21.09.25         | Git, GitHub and Markdown                 | Java, IntelliJ IDEA and Maven                | 🟢 Ready        |
 |    [02](#-course-02) | 22.09. - 28.09.25         | Java IOs                                 | Practical work 1 (1/5)                       | 🟢 Ready        |
 |    [03](#-course-03) | 29.09. - 05.10.25         | Practical work 1 (2/5)                   | Practical work 1 (3/5)                       | 🟢 Ready        |
-|    [04](#-course-04) | 06.10. - 12.10.25         | Docker and Docker Compose                | Practical work 1 (4/5)                       | 🟡 In progress  |
-| 🚨 [05](#-course-05) | 13.10. - 19.10.25         | SMTP and ncat                            | Practical work 1 (5/5) - Presentations       | 🔴 To do        |
+|    [04](#-course-04) | 06.10. - 12.10.25         | Docker and Docker Compose                | Practical work 1 (4/5)                       | 🟢 Ready        |
+| 🚨 [05](#-course-05) | 13.10. - 19.10.25         | SMTP and ncat                            | Practical work 1 (5/5) - Presentations       | 🟡 In progress  |
 |                    - | 20.10. - 26.10.25         | _No course: interdisciplinary week_      | _No course: interdisciplinary week_          | -               |
 |    [06](#-course-06) | 27.10. - 02.11.25         | Define an application protocol           | Practical work 2 (1/6)                       | 🔴 To do        |
 |    [07](#-course-07) | 03.11. - 09.11.25         | Java TCP and UDP programming (1/2)       | Practical work 2 (2/6)                       | 🔴 To do        |

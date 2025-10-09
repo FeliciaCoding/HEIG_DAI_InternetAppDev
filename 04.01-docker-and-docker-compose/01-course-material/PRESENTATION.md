@@ -117,7 +117,7 @@ other resources and alternatives as well.
 ### OCI, images, containers, and registries
 
 - Image: read-only template for container creation.
-- Container: runnable instance of an image.
+- Container: running instance of an image.
 - Registry: service storing images.
 
 ![bg right contain](./images/oci-specification.png)
@@ -165,6 +165,16 @@ other resources and alternatives as well.
 
 ![bg right contain](./images/dockerfile-specification.png)
 
+### Code examples
+
+Check the code examples in the [`02-code-examples`][code-examples] directory:
+
+- Basic Dockerfile.
+- Dockerfile with command.
+- Dockerfile with entrypoint and command.
+- Dockerfile with run and copy commands.
+- Docker run with ports.
+
 ### Summary
 
 - Docker is a container engine composed of two parts: the Docker daemon and the
@@ -184,27 +194,41 @@ other resources and alternatives as well.
 
 ### Docker Compose
 
-- Can be used to deploy a multi-container application.
-- Can be committed with the application.
+- Can be used to deploy a multi-container application (called a _"stack"_).
+- Can be committed to Git.
 - Can be used to deploy the application on any Docker host.
-- Easy to use.
+- Much easier than plain Docker commands.
 
 ![bg right w:60%](https://github.com/docker/compose/raw/main/logo.png)
 
-### Docker Compose specification
+### Docker Compose specification (1/2)
 
-- Defines the application.
-  - Services: containers.
-  - Volumes: shared directories.
-  - Networks: network communication.
-- Written in YAML.
+- Defines the stack:
+  - Services: containers that can interact together.
+  - Volumes: shared directories to store data.
+  - Networks: network communications between services.
 
 ![bg right contain](./images/docker-compose-specification.png)
 
+### Docker Compose specification (2/2)
+
+- A Docker Compose file is written in YAML:
+  - `compose.yaml` (new standard)
+  - `docker-compose.yaml` (old standard).
+
+![bg right contain](./images/docker-compose-specification.png)
+
+### Docker Compose v1 vs. Docker Compose v2
+
+- Docker Compose v1 written in Python (`docker-compose`).
+- Docker Compose v2 written in Go (`docker compose`).
+- Docker Compose v1 is deprecated.
+
+![bg right contain](./images/docker-compose-v1-vs-v2.png)
+
 ### Code examples
 
-Check the code examples in the
-[`heig-vd-dai-course-code-examples`][code-examples] Git repository:
+Check the code examples in the [`02-code-examples`][code-examples] directory:
 
 - Basic Docker Compose.
 - Docker Compose with ports.
@@ -216,9 +240,32 @@ Check the code examples in the
 - Docker Compose allows to define a multi-container Docker application in a
   Docker Compose file.
 - A Docker Compose file can consist of a set of services, volumes and networks
-  called a "stack".
-- A Docker Compose file (`docker-compose.yaml`) can be easily shared and
-  versioned with the application.
+  called a _"stack"_.
+- A Docker Compose file (`compose.yaml`) can be easily shared and versioned with
+  the application.
+
+## Make containers communicate with each other using Docker networks
+
+<!-- _class: lead -->
+
+More details for this section in the [course material][course]. You can find
+other resources and alternatives as well.
+
+### Make containers communicate with each other using Docker networks
+
+- Containers are isolated by default.
+- When defined in a Docker Compose file, containers are connected to a default
+  network, allowing them to communicate with each other.
+- Custom Docker networks can be defined with `docker network` command and/or in
+  a Docker Compose file and shared between services and/or stacks.
+- Each container connected to a network can be reached by its name.
+
+### Code examples
+
+Check the code examples in the [`02-code-examples`][code-examples] directory:
+
+- Make two containers communicate with each other with Docker.
+- Make two containers communicate with each other with Docker Compose.
 
 ## Questions
 
@@ -234,9 +281,9 @@ Do you have any questions?
 
 Containerize the previous Java IOs project:
 
-- Create the Dockerfile and Docker Compose files
-- Publish on GitHub Container Registry
-- Run it on any Docker host
+- Create the Dockerfile and Docker Compose files.
+- Publish on GitHub Container Registry.
+- Run it on any Docker host.
 
 ![bg right w:80%](./images/what-will-you-do.png)
 
@@ -264,17 +311,6 @@ we notice some difficulties, we will come back to you to help you.
 
 You can use reactions to express your opinion on a comment!
 
-## What will you do next?
-
-We are arriving at the end of the first part of the course.
-
-An evaluation will be done to check your understanding of all the content seen
-in this first part.
-
-More details will be given in the next chapter.
-
-![bg right:40%](https://images.unsplash.com/photo-1604134967494-8a9ed3adea0d?fit=crop&h=720)
-
 ## Sources
 
 - Main illustration by [CHUTTERSNAP](https://unsplash.com/@chuttersnap) on
@@ -287,8 +323,6 @@ More details will be given in the next chapter.
   [Unsplash](https://unsplash.com/photos/j6brni7fpvs)
 - Illustration by [Scott Webb](https://unsplash.com/@scottwebb) on
   [Unsplash](https://unsplash.com/photos/yekGLpc3vro)
-- Illustration by [MChe Lee](https://unsplash.com/@mclee) on
-  [Unsplash](https://unsplash.com/photos/PC91Jm1DlWA)
 
 [course]:
 	https://github.com/heig-vd-dai-course/heig-vd-dai-course/tree/main/04.01-docker-and-docker-compose
@@ -299,4 +333,4 @@ More details will be given in the next chapter.
 [course-qr-code]:
 	https://quickchart.io/qr?format=png&ecLevel=Q&size=400&margin=1&text=https://github.com/heig-vd-dai-course/heig-vd-dai-course/blob/main/06-docker-and-docker-compose/COURSE_MATERIAL.md
 [code-examples]:
-	https://github.com/heig-vd-dai-course/heig-vd-dai-course-code-examples/tree/main
+	https://github.com/heig-vd-dai-course/heig-vd-dai-course/tree/main/04.01-docker-and-docker-compose/02-code-examples

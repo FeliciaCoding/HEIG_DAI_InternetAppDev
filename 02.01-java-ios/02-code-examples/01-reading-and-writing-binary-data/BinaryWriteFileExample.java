@@ -9,7 +9,7 @@ import java.io.OutputStream;
 class BinaryWriteFileExample {
 
   public static void main(String[] args) throws IOException {
-    OutputStream fos = new FileOutputStream("binary-file.bin");
+      OutputStream fos = new FileOutputStream("binary-file.bin"); // If the file doesnt exist, JAVA will create the new file
 
     for (int i = 0; i < 256; i++) {
       fos.write(i);

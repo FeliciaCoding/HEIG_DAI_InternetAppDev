@@ -13,9 +13,10 @@ The `COPY` instruction copies files or directories from the host to the image.
 These files will be stored in the image and can be used by the container at
 runtime.
 
-In this example, we use the `alpine:3.12` image. It means that the Docker image
+In this example, we use the `alpine:3.22` image. It means that the Docker image
 will be based on the Alpine Linux image and have all the tools and libraries
-provided by this image, such as `ash` as the default shell and `apk` to install
+provided by this image, such as `ash` as the default shell (not to be confused
+with `bash` - `ash` is the default shell on Alpine Linux) and `apk` to install
 new packages.
 
 `apk` will be used to install the `tree` package.
