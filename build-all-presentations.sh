@@ -15,7 +15,7 @@ if command -v "marp-cli.js" > /dev/null 2>&1; then
     MARP_CMD="marp-cli.js"
 else
     echo "Marp not installed, using its Docker image..."
-    MARP_CMD="docker run --rm --entrypoint=\"marp-cli.js\" --volume=\"$WORKDIR\":/home/marp/app $MARP_DOCKER_IMAGE"
+    MARP_CMD="docker run --rm --entrypoint=\"marp-cli.js\" --user $(id -u):$(id -g) --volume=\"$WORKDIR\":/home/marp/app $MARP_DOCKER_IMAGE"
 fi
 
 # Convert presentations
@@ -34,8 +34,8 @@ find . -mindepth 3 -maxdepth 3 -type f -name "PRESENTATION.html" -exec sh -c '
 echo "Renaming presentation files to match parent directory..."
 find . -mindepth 3 -maxdepth 3 -type f -name "PRESENTATION.pdf" -exec sh -c '
     for file; do
-        chapter_name=$(basename "$(dirname "$(dirname "$file")")")
-        mv -f "$file" "$(dirname "$file")/$chapter_name-presentation.pdf"
+        course_name=$(basename "$(dirname "$(dirname "$file")")")
+        mv -f "$file" "$(dirname "$file")/$course_name-presentation.pdf"
     done
 ' sh {} +
 

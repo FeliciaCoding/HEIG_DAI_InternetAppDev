@@ -1,0 +1,38 @@
+@startuml sms-protocol-example-3-send-a-message-to-an-unconnected-recipient
+skinparam boxPadding 100
+skinparam maxMessageSize 150
+skinparam noteTextAlignment center
+skinparam sequenceMessageAlign direction
+skinparam wrapWidth 250
+autonumber
+
+!pragma teoz true
+
+title "SMS Protocol - Example 3 - Send a message to an unconnected recipient"
+
+participant "Client 1" as c1
+participant "Server" as s
+
+== Join the server ==
+
+note over c1, s
+The socket is instanciated and the connection is
+automatically established.
+end note
+
+c1->s : Establish connection
+c1<-->s : Connection established
+
+c1->s: JOIN alice
+s->c1: OK
+
+== List connected clients ==
+
+c1->s: LIST
+s->c1: CLIENTS alice
+
+== Send a message to an unconnected recipient ==
+
+c1->s: SEND bob Hello Bob!
+s->c1: ERROR 1
+@enduml
