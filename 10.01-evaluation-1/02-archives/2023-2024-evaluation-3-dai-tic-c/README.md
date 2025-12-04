@@ -47,7 +47,7 @@ Définissez le protocole applicatif selon la structure qui a été vue dans le
 cours. Dans le contexte de ce test, deux exemples sont attendus (un fonctionnel
 et un qui engendre une erreur) uniquement.
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 # Protocole Mechanotify
@@ -195,7 +195,7 @@ des erreurs surviennent.
 
 ![example-error-2](./images/question_1_example_error_2.png)
 
-</details>
+
 
 ### Question 2 (3 minutes - 3 points)
 
@@ -210,7 +210,7 @@ Affirmations sur UDP, vrai au faux ?
   message. Les autres clients ne reçoivent pas le message.
 - UDP ne fonctionne pas avec des streams mais avec des datagrams
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 - Faux
@@ -220,7 +220,7 @@ Affirmations sur UDP, vrai au faux ?
 - Faux
 - Vrai
 
-</details>
+
 
 ### Question 3 (10 minutes - 8 points)
 
@@ -287,7 +287,7 @@ Aussi, votre container doit respecter les points suivants:
   hôte. Il s'agit donc de démarrer cette application réseau un autre port que le
   5000 et d'utiliser le port 5001 à la place.
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 Fichier `Dockerfile` :
@@ -331,7 +331,7 @@ services:
       - 5001:5000
 ```
 
-</details>
+
 
 ### Question 4 (10 minutes - 6 points)
 
@@ -339,26 +339,17 @@ Quels sont les deux modèles de messagerie en UDP et en quoi diffèrent-ils en
 termes de style de communication et d'attentes ? Donnez un exemple **simple** de
 scénario approprié pour chaque modèle de messagerie.
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
-- Fire and forget (1 point) : Le modèle Fire and forget est le modèle de
-  messagerie le plus simple. Il s'agit d'une communication à sens unique. Cela
-  signifie qu'un datagramme est envoyé d'un hôte à un autre hôte sans attendre
-  de réponse. (1 point)
+- Fire and forget (1 point): The Fire and forget model is the model of simplest messaging. It is a one-way communication. That means that a datagram is sent from one host to another host without waiting response. (1 point) 
+- Request-response (1 point): The request-response model is a communication Bidirectional. This means that a datagram is sent from a host to a other host and the recipient sends a response to the sender. (1 point) 
+- 
+- Examples: 
+- Fire and forget: a transmitter (sensor) sends a message to a receiver (weather station) (1 point)
+- Request and response: a customer connects to a weather station to Get the current temperature (1 point)
 
-- Request-response (1 point) : Le modèle request-response est une communication
-  bidirectionnelle. Cela signifie qu'un datagramme est envoyé d'un hôte à un
-  autre hôte et que le destinataire envoie une réponse à l'expéditeur. (1 point)
 
-Exemples :
-
-- Fire and forget: un émetteur (capteur) envoie un message à un récepteur
-  (station météorologique) (1 point)
-- Request and response: un client se connecte à une station météorologique pour
-  obtenir la température actuelle (1 point)
-
-</details>
 
 ### Question 5 (8 minutes - 6 points)
 
@@ -366,7 +357,7 @@ Citez **en quelques mots** la différence entre multicast, broadcast et unicast
 et donnez un exemple **simple** d'utilisation pour chacun de ces types de
 communication.
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 - Unicast: communication entre deux machines (1 point)
@@ -375,13 +366,11 @@ communication.
 
 Exemples:
 
-- Unicast: un client qui se connecte à un serveur (1 point)
-- Multicast: un serveur qui envoie un message à un sous-ensemble de clients
-  (groupe WhatsApp) (1 point)
-- Broadcast: un serveur qui envoie un message à tous les clients (Recherche de
-  serveur DHCP) (1 point)
+- Unicast: a client that connects to a server (1 point) 
+- Multicast: a server that sends a message to a subset of clients (WhatsApp group) (1 point) 
+- Broadcast: a server that sends a message to all clients (Broadcast Search: DHCP server) (1 point)
 
-</details>
+
 
 ### Question 6 (3 minutes - 3 points - 6 x 0.5 point)
 
@@ -398,7 +387,7 @@ Affirmations sur Docker et Docker Compose, vrai au faux ?
   logiciels en les distribuant sous forme d'images.
 - Un conteneur Docker stocke de manière persistante ses données.
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 - Cette question étant trop ambiguë, elle est annulée. Tous les points sont
@@ -409,4 +398,3 @@ Affirmations sur Docker et Docker Compose, vrai au faux ?
 - Vrai
 - Faux
 
-</details>

@@ -182,7 +182,7 @@ les choix suivants: A, B, C ou D.
     - C. 465
     - D. 587
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 1. A
@@ -212,7 +212,7 @@ les choix suivants: A, B, C ou D.
 25. B
 26. C ou D
 
-</details>
+
 
 ### Question 2 (10 points)
 
@@ -268,7 +268,7 @@ l'application (uniquement avec l'aide de Docker, pas Docker Compose).
 Vous ne pouvez pas modifier la structure de fichiers fournie (déplacer des
 fichiers, renommer des fichiers, etc.).
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 Fichier `Dockerfile` (6 points) :
@@ -297,7 +297,7 @@ docker build -t java-intellij-idea-and-maven .
 docker run java-intellij-idea-and-maven [hello|goodbye|--help|--version]
 ```
 
-</details>
+
 
 ### Question 3 (17 points)
 
@@ -319,7 +319,7 @@ interactions entre les utilisateurs et le système de la vidéothèque.
 Rédigez un document décrivant le protocole applicatif que vous avez conçu selon
 la structure vue en cours.
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 > [!NOTE]
@@ -450,7 +450,7 @@ Un exemple non fonctionnel de l'utilisation du protocole applicatif (_0.5 point
 si un exemple non fonctionnel est présent_ et _1 point si l'exemple non
 fonctionnel est correctement défini et permet de répondre au cas d'utilisation_)
 
-</details>
+
 
 ---
 
@@ -519,7 +519,7 @@ Si le serveur reçoit une commande inconnue, il répond par une erreur génériq
 
 ![Non-functional example](./images/example-2-non-functional.png)
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 ```java
@@ -687,4 +687,4 @@ public class PingPongServer {
 }
 ```
 
-</details>
+

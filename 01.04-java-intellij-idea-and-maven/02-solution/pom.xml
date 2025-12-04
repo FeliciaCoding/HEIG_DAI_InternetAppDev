@@ -5,8 +5,12 @@
   <groupId>ch.heigvd</groupId>
   <artifactId>java-intellij-idea-and-maven</artifactId>
   <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>../03-tryOut</module>
+    </modules>
 
-  <properties>
+    <properties>
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

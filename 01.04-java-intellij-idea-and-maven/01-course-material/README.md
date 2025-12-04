@@ -1431,8 +1431,7 @@ Update the `Main` class to make usage of these two subcommands:
 ```java
 package ch.heigvd;
 
-import ch.heigvd.commands.Goodbye;
-import ch.heigvd.commands.Hello;
+
 import java.io.File;
 import picocli.CommandLine;
 

@@ -361,7 +361,7 @@ with the following commands (among others):
 
 To send an email, you will need to use the following commands:
 
-```text
+text
 EHLO <sender>
 MAIL FROM: <sender email address>
 RCPT TO: <recipient email address>

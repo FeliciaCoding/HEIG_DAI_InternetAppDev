@@ -28,14 +28,13 @@ Toute tentative de tricherie sera sanctionnée avec la note 1.
 
 Que signifie résoudre un conflit dans Git et comment cela se produit-il ?
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
-Résoudre un conflit signifie ajuster manuellement/fusionner les différences dans
-un fichier (1 point) lorsque deux ou plusieurs personnes ont apporté des
-modifications à ce fichier en même temps (1 point).
+Resolving a conflict means manually adjusting/merging differences in a file (1 point) 
+when two or more people have contributed changes to this file at the same time (1 point).
 
-</details>
+
 
 ## Question 2 (2 points)
 
@@ -43,42 +42,38 @@ Expliquez pourquoi il est crucial de spécifier l'encodage des caractères lors 
 la lecture ou de l'écriture de données textuelles en Java. Quelles pourraient
 être les conséquences de ne pas le faire ?
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
-Spécifier l'encodage des caractères garantit que les caractères sont
-correctement interprétés lors de la lecture ou de l'écriture de données
-textuelles (1 point).
+Specifying the character encoding ensures that the characters are Correctly interpreted when reading or writing data (1 point). 
 
-Ne pas spécifier l'encodage peut entraîner des caractères illisibles ou des
-erreurs d'encodage (1 point).
+Not specifying the encoding can result in unreadable characters or Encoding errors (1 point).
 
-</details>
+
 
 ## Question 3 (1 points)
 
 Vrai ou faux : La méthode `readLine()` renvoie une chaîne qui ne contient pas
 les caractères de fin de ligne.
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 Vrai (1 point)
 
-</details>
+
 
 ## Question 4 (2 points)
 
 Expliquez la différence entre le JDK et le JRE.
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
-Le JDK (Java Development Kit) est nécessaire pour développer des applications
-Java (1 point), tandis que le JRE (Java Runtime Environment) est nécessaire pour
-exécuter les applications Java (1 point).
+The JDK (Java Development Kit) is required to develop applications Java (1 point), 
+while the Java Runtime Environment (JRE) is required to run Java applications (1 point).
 
-</details>
+
 
 ## Question 5 (8 points)
 
@@ -95,7 +90,7 @@ class FileCopy {
 }
 ```
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 ```java
@@ -127,7 +122,6 @@ class FileCopy {
 }
 ```
 
-</details>
 
 ## Question 6 (3 points)
 
@@ -143,7 +137,7 @@ nouvelle fonctionnalité dans un projet open source ?
 6. Ouvrez une issue pour discuter de la fonctionnalité (facultatif, mais
    recommandé)
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 1. 6
@@ -153,7 +147,7 @@ nouvelle fonctionnalité dans un projet open source ?
 5. 3
 6. 2
 
-</details>
+
 
 ## Question 7 (1 point)
 
@@ -164,12 +158,12 @@ Quel est l'objectif principal de Docker ?
 3. Fournir une plateforme de services de conteneurs
 4. Créer des applications Web
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 Fournir une plateforme de services de conteneurs (1 point)
 
-</details>
+
 
 ## Question 8 (4 points)
 
@@ -184,7 +178,7 @@ Rédigez un document Markdown qui présente les points suivants:
   - Langue
   - Niveau
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 ```markdown
@@ -207,20 +201,18 @@ Ceci est une introduction fictive. (0.5 point)
 | Langue 3             | Débutant           |
 ```
 
-</details>
+
 
 ## Question 9 (2 points)
 
 Pourquoi est-il recommandé d'utiliser un gestionnaire de versions Java ?
 
-<details>
+
 <summary>Afficher la réponse</summary>
+A version manager allows you to install and switch between different Java versions (1 point), 
+ensuring compatibility with the used by other developers in a project (1 point).
 
-Un gestionnaire de versions permet d'installer et de basculer entre différentes
-versions de Java (1 point), assurant la compatibilité avec les versions
-utilisées par les autres développeurs d'un projet (1 point).
 
-</details>
 
 ## Question 10 (1 points)
 
@@ -238,18 +230,14 @@ Faux (1 point)
 
 Qu'est-ce que Maven et à quoi sert-il ?
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
-Maven est un outil de gestion de dépendances et d'automatisation (0.5 point).
+Maven is a dependency management and automation tool (0.5 points). 
 
-Maven définit une structure standard de fichiers (0.5 point) et permet de gérer
-les dépendances externes (0.5 point) ainsi que des plugins (0.5 point).
+Maven defines a standard file structure (0.5 points) and allows you to manage external dependencies (0.5 points) as well as plugins (0.5 points). 
 
-Maven définit un processus de compilation (0.5 point) pour une construction
-simplifiée d'applications Java (0.5 point)
-
-</details>
+Maven defines a compilation process (0.5 points) for a build Java Applications (0.5 points)
 
 ## Question 12 (8 points)
 
@@ -268,7 +256,7 @@ Identifiez-les et proposez une correction.
     }
 ```
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 ```java
@@ -309,7 +297,7 @@ Identifiez-les et proposez une correction.
     }
 ```
 
-</details>
+
 
 ## Question 13 (1 point)
 
@@ -320,24 +308,24 @@ Quel est l'objectif principal de l'encodage UTF-8 ?
 3. Encoder des caractères en ASCII
 4. Supporter des emojis
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 Supporter plusieurs alphabets (1 point)
 
-</details>
+
 
 ## Question 14 (2 points)
 
 Expliquez la différence entre `git clone` et `git push`.
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
-`git clone` crée une copie locale d'un dépôt distant (1 point), tandis que
-`git push` envoie les modifications locales vers le dépôt distant (1 point).
+'git clone' creates a local copy of a remote repository (1 point), 
+while 'git push' pushes local changes to the remote repository (1 dot).
 
-</details>
+
 
 ## Question 15 (1 point)
 
@@ -348,9 +336,9 @@ Quel est l'objectif de la spécification OCI ?
 3. Gérer les mises à jour de Docker
 4. Aucune de ces réponses
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 Définir un standard pour les images de conteneurs (1 point)
 
-</details>
+

@@ -1,10 +1,24 @@
 services:
   nginx:
     image: nginx:1.27
+    command: echo "Hello, World!",
+    //use to configure applications 
+    //define the application's behavior, 
+    //such as the database connection string, 
+    // the log level, or the application's port.
     environment:
       - NGINX_LOG_LEVEL=error
+
+    // specifies the ports to expose from the container 
+    // to the host machine. HOST_PORT:CONTAINER_PORT
+
     ports:
       - 8080:80
+
+    // specifies the volumes to mount in the container
+    // share and persist files between the host 
+    // and the container.
+    // ex:configuration files, logs, or data
     volumes:
       - ./html:/usr/share/nginx/html
       - ./logs:/var/log/nginx/localhost

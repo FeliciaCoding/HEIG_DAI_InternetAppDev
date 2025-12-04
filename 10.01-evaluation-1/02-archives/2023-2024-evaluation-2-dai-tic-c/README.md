@@ -45,7 +45,7 @@ Définissez le protocole applicatif selon la structure qui a été vue dans le
 cours. Dans le contexte de ce test, deux exemples sont attendus (un fonctionnel
 et un qui engendre une erreur) uniquement.
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 # Protocole Achat'instant
@@ -202,21 +202,21 @@ des erreurs surviennent.
 
 ![example-error-3](./images/question_1_example_error_3.png)
 
-</details>
+
 
 ### Question 2 (3 minutes - 3 points - 3 x 1 point)
 
 Décrivez avec vos propres mots la différence entre les protocoles SMTP, POP3 et
 IMAP.
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 Le protocole SMTP est utilisé pour envoyer des courriels (1 point). Le protocole
 POP3 est utilisé pour récupérer des courriels (1 point). Le protocole IMAP est
 utilisé pour synchroniser des courriels entre plusieurs appareils (1 point).
 
-</details>
+
 
 ### Question 3 (5 minutes - 5 points - 5 x 1 point)
 
@@ -226,24 +226,11 @@ entrer un mot de passe à chaque fois ?
 
 Répondez avec vos propres mots.
 
-<details>
+
 <summary>Afficher la réponse</summary>
+You can connect to a remote server with the SSH protocol (1 point). For Log in without having to enter a password each time, you have to use A pair of SSH keys. (1 point) By generating an SSH key pair, we obtain a private key and a Public. The private key must be kept secret (1 point) and the public key can be shared with others (1 point). The public key must be added to the remote server in the '~/.ssh/authorized_keys'. (1 point) When connecting to the remote server, The server will check if the public key used for the connection is located in the '~/.ssh/authorized_keys' file. If so, the connection is Accepted.
 
-On peut se connecter à un serveur distant avec le protocole SSH (1 point). Pour
-se connecter sans devoir entrer un mot de passe à chaque fois, il faut utiliser
-une paire de clés SSH. (1 point)
 
-En générant une paire de clés SSH, on obtient une clé privée et une clé
-publique. La clé privée doit être gardée secrète (1 point) et la clé publique
-peut être partagée avec d'autres personnes (1 point).
-
-La clé publique doit être ajoutée sur le serveur distant dans le fichier
-`~/.ssh/authorized_keys`. (1 point) Lorsque l'on se connecte au serveur distant,
-le serveur va vérifier si la clé publique utilisée pour la connexion se trouve
-dans le fichier `~/.ssh/authorized_keys`. Si c'est le cas, la connexion est
-acceptée.
-
-</details>
 
 ### Question 4 (5 minutes - 4 points - 8 x 0.5 point)
 
@@ -251,12 +238,12 @@ Alice souhaite envoyer un email à Bob. Schématisez le cheminement de l'email
 depuis la boîte de réception d'Alice jusqu'à la boîte de réception de Bob.
 Indiquez au moins les acteurs et les protocoles impliqués dans ce scénario.
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 ![answer-4](./images/question_4.png)
 
-</details>
+
 
 ### Question 5 (3 minutes - 3 points - 6 x 0.5 point)
 
@@ -271,7 +258,7 @@ Affirmations sur les sockets, vrai au faux ?
 - Lors de la création d'un socket, il est toujours nécessaire de définir
   l'encodage avec lequel les données seront envoyées et reçues
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 - Vrai
@@ -281,7 +268,7 @@ Affirmations sur les sockets, vrai au faux ?
 - Faux
 - Faux
 
-</details>
+
 
 ## Partie pratique
 
@@ -448,7 +435,7 @@ DOWN word
 ERROR 1
 ```
 
-<details>
+
 <summary>Afficher la réponse</summary>
 
 ```java
@@ -602,4 +589,4 @@ public class Client {
 }
 ```
 
-</details>
+

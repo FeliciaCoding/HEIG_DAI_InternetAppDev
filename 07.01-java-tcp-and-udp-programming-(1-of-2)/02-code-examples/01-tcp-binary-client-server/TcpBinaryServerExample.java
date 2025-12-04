@@ -34,8 +34,8 @@ class TcpBinaryServerExample {
             bos.write(b);
           }
 
-          in.close();
-          bos.close();
+          //in.close();
+          //bos.close();
 
           System.out.println("[Server] Binary data saved in '" + FILENAME + "'");
           System.out.println("[Server] Closing connection");

@@ -248,6 +248,18 @@ There are three main ways to merge branches:
   the default behavior of Git.
 - **Rebase**: append the source branch to the target branch so no new commits
   are created. This is a more advanced technique.
+> [ My note ]
+> 
+> - It looks like the source was appended, but what really happened is the source commits were copied and replayed on top of target. 
+> 
+>   main: A — B — C
+>
+>   feature: A — B — D — E
+>
+>   feature after rebase : A — B — C - D' — E'
+> 
+> - Rebase does create new commit objects (new SHAs) for the rebased commits. They contain the same changes/messages, but they are technically new commits (D', E' above).
+> 
 - **Squash**: combine multiple commits into a single one to reduce the number of
   commits in a branch.
 
@@ -281,10 +293,43 @@ Here is an example of a `.gitignore` file:
 
 # Except the input files in the `example` directory
 !examples/**/*_input.txt
+# ! means “unignore / include this again” (a negation rule).
+# examples/ limits it to the examples directory.
+# **/ means any subfolder depth under examples/.
+#*_input.txt matches files that end with _input.txt.
 
 # Ignore the `target` directory at the root level of the gitignore file but not the others `target` directories
 /target/
 ```
+
+>[My note]
+> 
+> - `!examples/**/*_input.txt` : 
+>
+> examples/test_input.txt → NOT ignored (tracked)
+> 
+> examples/a/b/c/sample_input.txt → NOT ignored
+> 
+> examples/test.txt → still ignored (doesn’t match _input.txt)
+> 
+> otherdir/test_input.txt → still ignored (not under examples/)
+> 
+> 
+> 
+> 
+> - `/target/`
+> 
+> Leading / anchors the pattern to the repo root. 
+> 
+> So it ignores only the root-level target/ directory:
+> 
+> target/file.o → ignored
+>
+> But not other folders named target deeper in the tree:
+>
+> src/target/file.o → not ignored
+>
+> examples/target/ → not ignored
 
 More information about gitignore can be found in the official documentation:
 <https://git-scm.com/docs/gitignore>.
@@ -603,9 +648,9 @@ List one
 
 List two
 
-- Item 1
-- Item 2
-- Item 3
+* Item 1
+* Item 2
+* Item 3
 ```
 
 <details>
@@ -619,9 +664,9 @@ List one
 
 List two
 
-- Item 1
-- Item 2
-- Item 3
+* Item 1
+* Item 2
+* Item 3
 
 </details>
 
@@ -664,6 +709,7 @@ or a reference to a link defined elsewhere in the document.
 [HEIG-VD][heig-vd]
 
 [heig-vd]: https://heig-vd.ch
+
 ```
 
 <details>
@@ -715,15 +761,20 @@ text alignment can be specified using `:` characters.
 | -------- | :------: | -------: |
 | Cell 1   |  Cell 2  |   Cell 3 |
 | Cell 4   |  Cell 5  |   Cell 6 |
+
+
+
+
 ```
 
 <details>
 <summary>Display the results</summary>
 
-| Header 1 | Header 2 | Header 3 |
-| -------- | :------: | -------: |
-| Cell 1   |  Cell 2  |   Cell 3 |
-| Cell 4   |  Cell 5  |   Cell 6 |
+| Header 1 | Header 2  | Header 3 |
+| -------- |:---------:| -------: |
+| Cell 1   |  Cell 2   |   Cell 3 |
+| Cell 4   |  Cell 5   |   Cell 6 |
+
 
 </details>
 

@@ -174,8 +174,6 @@ A sink of data is where the data goes. It can be another file, a network
 connection, a screen, etc. A common term for a sink of data is something that
 consumes data (a _consumer_).
 
-A stream is a way to read or write data from a source to a sink.
-
 ## The Java IO API
 
 The [Java documentation](https://docs.oracle.com/en/java/javase/21/docs/api/) is
@@ -637,10 +635,12 @@ Here are the changes between the `TextReadAndWriteFileExample.java` file and the
 
 ```diff
    public static void main(String[] args) throws IOException {
-     Reader reader = new FileReader("TextReadAndWriteFileExample.java", StandardCharsets.UTF_8);
+     Reader reader = new FileReader
+        ("TextReadAndWriteFileExample.java", StandardCharsets.UTF_8);
 +    BufferedReader br = new BufferedReader(reader);
 +
-     Writer writer = new FileWriter("TextReadAndWriteFileExample.txt", StandardCharsets.UTF_8);
+     Writer writer = new FileWriter
+        ("TextReadAndWriteFileExample.txt", StandardCharsets.UTF_8);
 +    BufferedWriter bw = new BufferedWriter(writer);
 
      // -1 indicates the end of the file

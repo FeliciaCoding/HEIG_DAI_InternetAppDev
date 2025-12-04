@@ -37,6 +37,7 @@ public class UdpUnicastServerExample {
                 requestPacket.getLength(),
                 StandardCharsets.UTF_8);
 
+        // [Server] Request received (at Wed Nov 26 12:22:18 CET 2025): Hello, I'm the client! 🦇
         System.out.println("[Server] Request received (at " + new Date() + "): " + request);
       }
     } catch (Exception e) {
