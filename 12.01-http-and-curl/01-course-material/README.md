@@ -17,8 +17,7 @@ This work is licensed under the [CC BY-SA 4.0][license] license.
   [Presentation (web)](https://heig-vd-dai-course.github.io/heig-vd-dai-course/12.01-http-and-curl/01-course-material/index.html)
   ·
   [Presentation (PDF)](https://heig-vd-dai-course.github.io/heig-vd-dai-course/12.01-http-and-curl/01-course-material/12.01-http-and-curl-presentation.pdf)
-- Code examples: [Link to content](../02-code-examples/)
-- Solution: [Link to content](../03-solution/)
+- Solution: [Link to content](../02-solution/)
 
 ## Table of contents
 
@@ -176,8 +175,8 @@ course.
 #### Add Javalin to the project
 
 Add the latest **stable** version of Javalin available in the Maven repository:
-<https://mvnrepository.com/artifact/io.javalin/javalin> to the `pom.xml` file as
-seen in previous chapters:
+<https://mvnrepository.com/artifact/io.javalin/javalin-bundle> to the `pom.xml`
+file as seen in previous chapters:
 
 ```xml
     <!-- https://mvnrepository.com/artifact/io.javalin/javalin-bundle -->
@@ -1800,7 +1799,7 @@ The REST pattern is based on the six following principles:
 5. Uniform interface:
    - Use URIs/URLs to identify resources.
    - Server responses use a standard format that includes all information
-     required by the client to process the data (modify or delete the resource’s
+     required by the client to process the data (modify or delete the resource's
      state).
    - Server responses include links that allow the client to discover how to
      interact with a resource.
@@ -1912,14 +1911,15 @@ package ch.heigvd.users;
 import io.javalin.http.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
+import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class UsersController {
-  private final Map<Integer, User> users;
+  private final ConcurrentMap<Integer, User> users;
+
   private final AtomicInteger uniqueId = new AtomicInteger(1);
 
-  public UsersController(Map<Integer, User> users) {
+  public UsersController(ConcurrentMap<Integer, User> users) {
     this.users = users;
   }
 
@@ -2059,12 +2059,12 @@ package ch.heigvd.auth;
 
 import ch.heigvd.users.User;
 import io.javalin.http.*;
-import java.util.Map;
+import java.util.concurrent.ConcurrentMap;
 
 public class AuthController {
-  private final Map<Integer, User> users;
+  private final ConcurrentMap<Integer, User> users;
 
-  public AuthController(Map<Integer, User> users) {
+  public AuthController(ConcurrentMap<Integer, User> users) {
     this.users = users;
   }
 
@@ -2135,7 +2135,7 @@ import ch.heigvd.auth.AuthController;
 import ch.heigvd.users.User;
 import ch.heigvd.users.UsersController;
 import io.javalin.Javalin;
-import java.util.Map;
+import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class Main {
@@ -2145,7 +2145,7 @@ public class Main {
     Javalin app = Javalin.create();
 
     // This will serve as our database
-    Map<Integer, User> users = new ConcurrentHashMap<>();
+    ConcurrentMap<Integer, User> users = new ConcurrentHashMap<>();
 
     // Controllers
     AuthController authController = new AuthController(users);
