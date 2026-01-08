@@ -308,6 +308,14 @@ defines a method to handle HTTP requests. In this case, the method is a
 that sends a response to the client. A lambda expression is a way to define a
 method in a more concise way, sometimes called an anonymous method.
 
+[ My note ]
+
+`ctx -> { ... }` – this is a lambda expression (an anonymous function) that will run whenever someone calls that endpoint.
+
+`ctx` stands for context – it represents the HTTP request and response.
+
+`ctx.result("Hello, world!")` – sets the response body to the string "Hello, world!".
+
 ```java
 // Example of a lambda expression
 () -> System.out.println("Hello, world!");
